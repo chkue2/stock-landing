@@ -47,7 +47,7 @@ section{
   font-size: 100px;
   text-align: center;
   line-height: 115px;
-  color: #fdfdfd;
+  color: #fcfcfd;
 }
 .section01 .title strong{
   font-size: 100px;
@@ -150,6 +150,12 @@ section{
   width: 580px;
   height: 644px;
 }
+.section03 .item img.pc{
+  display: block;
+}
+.section03 .item img.mo{
+  display: none;
+}
 .section03 .item .content{
   flex: 1;
   display: flex;
@@ -219,6 +225,9 @@ section{
 }
 .section04 .title.pt127{
   padding-top: 127px;
+}
+.section04 .title br{
+  display: none;
 }
 .section04 .container{
   max-width: 1300px;
@@ -470,6 +479,9 @@ section{
   color: #bebebe;
   margin-bottom: 34px;
 }
+.section07 br{
+  display: none;
+}
 .section08{
   background-color: #1e1f24;
   padding-top: 70px;
@@ -500,4 +512,111 @@ section{
 .section08 .container .bottom .content{
   line-height: 30px;
   color: #bebebe;
+}
+#formModal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+}
+#formModal .bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.99);
+}
+#formModal .container{
+  width: 513px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 30px #0000000F;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 96px 50px 40px;
+}
+#formModal .title{
+  font-size: 40px;
+  margin-bottom: 33px;
+}
+#formModal .form{
+  display: flex;
+  flex-direction: column;
+}
+#formModal .form .form__title{
+  font-size: 14px;
+  color: #191919;
+  margin-bottom: 12px;
+}
+#formModal .form input[type=text],
+#formModal .form input[type=tel]{
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #dfe2e5;
+  box-shadow: inset 0px 3px 6px #00000014;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+}
+#formModal .form input[type=text] + .form__title{
+  margin-top: 12px;
+}
+#formModal .form .block{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+#formModal .form .block input{
+  width: calc(100% / 3);
+}
+#formModal label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#formModal label + label{
+  margin-top: 12px;
+}
+#formModal label input[type=checkbox]{
+  width: 21px;
+  height: 21px;
+  background: url(../img/pc/check-gray.svg) no-repeat center/cover;
+  margin-right: 6px;
+}
+#formModal label input[type=checkbox]:checked{
+  background: url(../img/pc/check-purple.svg) no-repeat center/cover;
+}
+#formModal label span{
+  font-size: 15px;
+  color: #191919;
+}
+#formModal .form__button{
+  width: 413px;
+  height: 75px;
+  line-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 38px;
+  box-shadow: 0px 15px 30px #0000004D;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #6662d9;
+  margin-top: 50px;
 }
