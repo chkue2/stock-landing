@@ -1,5 +1,6 @@
 section{
   margin: 0 auto;
+  padding: 0 24px;
 }
 .button{
   width: 413px;
@@ -148,7 +149,8 @@ section{
 }
 .section03 .item img{
   width: 580px;
-  height: 644px;
+  height: auto;
+  max-width: 50%;
 }
 .section03 .item img.pc{
   display: block;

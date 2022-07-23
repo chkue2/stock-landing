@@ -49,7 +49,7 @@ $(document).ready(function(){
     observeParents: true,
     observer: true,
     breakpoints: {
-      1299: {
+      959: {
         spaceBetween: 40,
       }
     },
@@ -89,7 +89,7 @@ const setReviews = () => {
 const setActiveClass = (index) => {
   $('#reviews .swiper-slide').removeClass('active')
   
-  if(window.innerHeight >= 1300){
+  if(window.innerHeight >= 960){
     for(i = index; i <= index + 2; i++){
       $('#reviews .swiper-slide').eq(i).addClass('active')
     }
