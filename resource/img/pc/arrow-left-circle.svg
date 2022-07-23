@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <filter id="사각형_1001" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1808" data-name="그룹 1808" transform="translate(-1496.5 -2933.5)">
+    <g id="그룹_1451" data-name="그룹 1451" transform="translate(1527 2961)">
+      <g transform="matrix(1, 0, 0, 1, -30.5, -27.5)" filter="url(#사각형_1001)">
+        <rect id="사각형_1001-2" data-name="사각형 1001" width="67" height="67" rx="33.5" transform="translate(30.5 27.5)" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+      </g>
+      <path id="패스_18" data-name="패스 18" d="M-9785.85-6765.138l8.425,8.424-8.425,8.425" transform="translate(9815.137 6790.714)" fill="none" stroke="#4a4a4a" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
