@@ -116,7 +116,7 @@ const sendForm = () => {
   } else if(serviceAgree === false){
     alert('서비스 이용 약관에 동의해주세요')
     return false
-  } 
+  }
 
 
   /*
@@ -125,4 +125,23 @@ const sendForm = () => {
     name: name,
     tel: tel,
   */
+  const param = {"name" : name, "tel1" : tel1, "tel2" : tel2, "tel3" : tel3}
+  $.ajax({
+    type: "post",
+    url : "/coupladm/Service/send_apply.php",
+    data : param,
+    dataType:"json",
+    success : function(data, status, xhr) {
+      alert("신청 되었습니다");
+      location.reload();
+      $.each(data.post_data, function (index, value) {
+
+      });
+
+
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log(jqXHR.responseText);
+    }
+  });
 }
