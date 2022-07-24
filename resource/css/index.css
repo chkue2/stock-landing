@@ -467,7 +467,7 @@ section{
 .section07{
   padding-top: 90px;
   padding-bottom: 80px;
-  background-color: #000000;
+  background: url(../img/pc/bg3.png) no-repeat center/cover;
 }
 .section07 .title{
   font-size: 45px;
